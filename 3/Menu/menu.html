@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Excursiones Nativo</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="icon" href="favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/9877e29fb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+  </head>
+  <body>
+    <div id="bodycontainer" class="container-fluid">
+      <header>
+        <div
+          id="headercontainer"
+          class="d-flex flex-row align-items-center justify-content-center"
+        >
+          <div>
+            <lottie-player
+              autoplay
+              loop
+              mode="normal"
+              src="https://lottie.host/9c13e074-4835-407b-b467-1b0199fbdc25/R0dZSIxSUx.json"
+              style="width: 90px"
+            >
+            </lottie-player>
+          </div>
+          <h1>Excursiones Nativo</h1>
+        </div>
+      </header>
+
+      <main>
+        <div
+          id="maincontainer"
+          class="d-flex flex-column justify-content-between align-items-center"
+          data-vide-bg="video/atardecer.mov"
+        >
+          <section id="titulo" class="p-3 text-center">
+            <h3>
+              Le brindamos opciones elaboradas con productos orgánicos
+              cosechados por agricultures locales, así como mariscos y pescados
+              frescos obtenidos en nuestra costa.
+            </h3>
+          </section>
+          <section id="contenido" class="d-flex flex-row">
+            <div id="entradacontenedor" class="p-1">
+              <div id="entradaanimacion">
+                <lottie-player
+                  autoplay
+                  loop
+                  mode="normal"
+                  src="https://lottie.host/a75a8240-8d2b-496a-9731-96a26e80060b/QqzTBTfqNF.json"
+                >
+                </lottie-player>
+              </div>
+              <button
+                type="button"
+                class="botoncontenido"
+                data-toggle="modal"
+                data-target="#entradamodal"
+              >
+                Entradas
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="entradamodal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="entradaModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="entradaModalLabel">Entradas</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="entradamodalcontenedor">
+                      <div id="E1" class="p-2 d-flex flex-row">
+                        <div id="E1imagen">
+                          <img src="imagenes/E1.jpg" alt="Ceviche" />
+                        </div>
+                        <div id="E1texto" class="p-2 d-flex flex-column">
+                          <h4>Ceviche</h4>
+                          <p>Pescado, servido con Plátanos Tostados</p>
+                        </div>
+                      </div>
+                      <div id="E2" class="p-2 d-flex flex-row">
+                        <div id="E2imagen">
+                          <img src="imagenes/E2.jpg" alt="Ensalada" />
+                        </div>
+                        <div id="E2texto" class="p-2 d-flex flex-column">
+                          <h4>Ensalada Nativo</h4>
+                          <p>Lechuga, Tomate, Palmito, Cebolla, Aguacate</p>
+                        </div>
+                      </div>
+                      <div id="E3" class="p-2 d-flex flex-row">
+                        <div id="E3imagen">
+                          <img src="imagenes/E3.webp" alt="Alitas" />
+                        </div>
+                        <div id="E3texto" class="p-2 d-flex flex-column">
+                          <h4>Alitas de Pollo</h4>
+                          <p>
+                            Glazeado de Tamarindo, servido con Zanahoria y Apio
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="desayunocontenedor" class="p-1">
+              <div id="desayunoanimacion">
+                <lottie-player
+                  autoplay
+                  loop
+                  mode="normal"
+                  src="https://lottie.host/286681fd-0911-4fe2-9e2c-3bf249134513/qgrhEPd3QP.json"
+                >
+                </lottie-player>
+              </div>
+
+              <button
+                type="button"
+                class="botoncontenido"
+                data-toggle="modal"
+                data-target="#desayunomodal"
+              >
+                Desayunos
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="desayunomodal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="desayunoModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="desayunoModalLabel">
+                      Desayunos
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="desayunomodalcontenedor">
+                      <div id="D1" class="p-2 d-flex flex-row">
+                        <div id="D1imagen">
+                          <img src="imagenes/D1.jpg" alt="Nativo" />
+                        </div>
+                        <div id="D1texto" class="p-2 d-flex flex-column">
+                          <h4>Nativo</h4>
+                          <p>
+                            Gallo Pinto, Huevos, Plátano, Queso, Pan Tostado
+                          </p>
+                        </div>
+                      </div>
+                      <div id="D2" class="p-2 d-flex flex-row">
+                        <div id="D2imagen">
+                          <img src="imagenes/D2.jpg" alt="Pura Vida" />
+                        </div>
+                        <div id="D2texto" class="p-2 d-flex flex-column">
+                          <h4>Pura Vida</h4>
+                          <p>Tostadas, Mantequilla, Mermelada, Fruta Picada</p>
+                        </div>
+                      </div>
+                      <div id="D3" class="p-2 d-flex flex-row">
+                        <div id="D3imagen">
+                          <img src="imagenes/D3.jpg" alt="Clasico" />
+                        </div>
+                        <div id="D3texto" class="p-2 d-flex flex-column">
+                          <h4>Clásico</h4>
+                          <p>Huevos, Tocineta, Pan Tostado, Queso</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="almuerzocontenedor" class="p-1">
+              <div id="almuerzoanimacion">
+                <lottie-player
+                  autoplay
+                  loop
+                  mode="normal"
+                  src="https://lottie.host/0e73d7ef-38b5-4d72-8392-55755c5a7da4/1yaoFYbtxJ.json"
+                >
+                </lottie-player>
+              </div>
+
+              <button
+                type="button"
+                class="botoncontenido"
+                data-toggle="modal"
+                data-target="#almuerzomodal"
+              >
+                Almuerzos
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="almuerzomodal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="almuerzoModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="almuerzoModalLabel">
+                      Almuerzos
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="almuerzomodalcontenedor">
+                      <div id="A1" class="p-2 d-flex flex-row">
+                        <div id="A1imagen">
+                          <img src="imagenes/A1.jpg" alt="Casado" />
+                        </div>
+                        <div id="A1texto" class="p-2 d-flex flex-column">
+                          <h4>Casado</h4>
+                          <p>
+                            Pollo en salsa, Ensalada Verde, Plátano Maduro,
+                            Arroz Blanco, Frijoles Negros
+                          </p>
+                        </div>
+                      </div>
+                      <div id="A2" class="p-2 d-flex flex-row">
+                        <div id="A2imagen">
+                          <img src="imagenes/A2.jpg" alt="Sopa de Mariscos" />
+                        </div>
+                        <div id="A2texto" class="p-2 d-flex flex-column">
+                          <h4>Sopa de Mariscos</h4>
+                          <p>Pescado, Langosta, Mejillones, Camarón, Calamar</p>
+                        </div>
+                      </div>
+                      <div id="A3" class="p-2 d-flex flex-row">
+                        <div id="A3imagen">
+                          <img src="imagenes/A3.jpg" alt="Gallos Carnitas" />
+                        </div>
+                        <div id="A3texto" class="p-2 d-flex flex-column">
+                          <h4>Gallos Carnitas</h4>
+                          <p>Carne de cerdo, Tortilla, Pico de Gallo</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="cenacontenedor" class="p-1">
+              <div id="cenaanimacion">
+                <lottie-player
+                  autoplay
+                  loop
+                  mode="normal"
+                  src="https://lottie.host/4599ca54-313f-4bc9-82bd-ab98a29d87c3/894ATzaIyN.json"
+                >
+                </lottie-player>
+              </div>
+
+              <button
+                type="button"
+                class="botoncontenido"
+                data-toggle="modal"
+                data-target="#cenamodal"
+              >
+                Cenas
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="cenamodal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="cenaModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="cenaModalLabel">Cenas</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="cenamodalcontenedor">
+                      <div id="C1" class="p-2 d-flex flex-row">
+                        <div id="C1imagen">
+                          <img src="imagenes/C1.jpg" alt="Pollo Asado" />
+                        </div>
+                        <div id="C1texto" class="p-2 d-flex flex-column">
+                          <h4>Pollo Asado</h4>
+                          <p>
+                            Glazeado con Mantequilla y Hierbas, con Puré de Papa
+                            y Vegetales Salteados
+                          </p>
+                        </div>
+                      </div>
+                      <div id="C2" class="p-2 d-flex flex-row">
+                        <div id="C2imagen">
+                          <img src="imagenes/C2.jpg" alt="Pasta de Mariscos" />
+                        </div>
+                        <div id="C2texto" class="p-2 d-flex flex-column">
+                          <h4>Pasta de Mariscos</h4>
+                          <p>
+                            Spaguetti en salsa de Ajo, Mejillones, Camarón,
+                            Langosta
+                          </p>
+                        </div>
+                      </div>
+                      <div id="C3" class="p-2 d-flex flex-row">
+                        <div id="C3imagen">
+                          <img
+                            src="imagenes/C3.jpEg"
+                            alt="Lomito a la Parrilla"
+                          />
+                        </div>
+                        <div id="C3texto" class="p-2 d-flex flex-column">
+                          <h4>Lomito a la Parrilla</h4>
+                          <p>
+                            Acompañado de Puré de Tiquizque y Vegetales
+                            Salteados
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="bebidacontenedor" class="p-1">
+              <div id="bebidaanimacion">
+                <lottie-player
+                  autoplay
+                  loop
+                  mode="normal"
+                  src="https://lottie.host/b6c29540-981b-40ea-b01f-f07d3ccd35d6/okV4IJ5a7X.json"
+                >
+                </lottie-player>
+              </div>
+
+              <button
+                type="button"
+                class="botoncontenido"
+                data-toggle="modal"
+                data-target="#bebidamodal"
+              >
+                Bebidas
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="bebidamodal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="bebidaModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bebidaModalLabel">Bebidas</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="bebidamodalcontenedor">
+                      <div id="B1" class="p-2 d-flex flex-row">
+                        <div id="B1imagen">
+                          <img src="imagenes/B1.jpg" alt="Batidos Naturales" />
+                        </div>
+                        <div id="B1texto" class="p-2 d-flex flex-column">
+                          <h4>Batidos Naturales</h4>
+                          <p>Frutas a elegir</p>
+                        </div>
+                      </div>
+                      <div id="B2" class="p-2 d-flex flex-row">
+                        <div id="B2imagen">
+                          <img src="imagenes/B2.jpg" alt="Cócteles Clásicos" />
+                        </div>
+                        <div id="B2texto" class="p-2 d-flex flex-column">
+                          <h4>Cócteles Clásicos</h4>
+                          <p>
+                            Mojitos, Daiquiri, Piña Colada, Mimosa, Cuba Libre,
+                            Tequila Sunrise, Margarita
+                          </p>
+                        </div>
+                      </div>
+                      <div id="B3" class="p-2 d-flex flex-row">
+                        <div id="B3imagen">
+                          <img
+                            src="imagenes/B3.jpg"
+                            alt="Lomito a la Parrilla"
+                          />
+                        </div>
+                        <div id="B3texto" class="p-2 d-flex flex-column">
+                          <h4>Vinos</h4>
+                          <p>Tinto, Blanco, Rosé, Espumantes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="cierre">
+            <h5>
+              Todos nuestros tours cuentan también con refrigerios, frutas de
+              temporada, cervezas nacionales y botellas de agua.
+            </h5>
+            <div class="p-2"></div>
+            <div
+              class="d-flex flex-row align-items-center justify-content-center"
+            >
+              <h3>Reserve Hoy!</h3>
+              <div class="p-3"></div>
+              <div id="reservaboton">
+                <a href="../Excursion/landing.html"
+                  ><button>
+                    <i class="fa-solid fa-bookmark"></i>&nbsp;Reservar
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="p-2"></div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div id="footercontainer">
+          <div
+            id="sociales"
+            class="d-flex flex-row align-items-center justify-content-center"
+          >
+            <div id="youtube" class="p-2">
+              <a href="https://www.youtube.com/@nativotamarindotamarindo4958"
+                ><i class="fa-brands fa-youtube fa-3x"></i
+              ></a>
+            </div>
+            <div class="p-3"></div>
+            <div id="instagram" class="p-2">
+              <a href="https://www.instagram.com/nativotamarindo/"
+                ><i class="fa-brands fa-instagram fa-3x"></i
+              ></a>
+            </div>
+            <div class="p-3"></div>
+            <div id="whatsapp" class="p-2">
+              <a href="https://walink.co/4e11df"
+                ><i class="fa-brands fa-whatsapp fa-3x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>

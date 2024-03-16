@@ -1,0 +1,197 @@
+:root {
+  --charcoal: #264653;
+  --green2: #2a9d8f;
+  --saffron: #e9c46a;
+  --brown: #f4a261;
+  --siena: #e76f51;
+}
+
+.modal-body img {
+  height: 100px;
+  width: 100px;
+}
+
+#bodycontainer {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+#headercontainer {
+  height: 10vh;
+}
+
+#footercontainer {
+  height: 7.5vh;
+}
+
+#maincontainer {
+  height: 82.5vh;
+}
+
+#contenido {
+  height: 50vh;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+#contenido lottie-player {
+  width: 150px;
+}
+
+#entradacontenedor,
+#desayunocontenedor,
+#almuerzocontenedor,
+#cenacontenedor,
+#bebidacontenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--charcoal);
+  border-radius: 15px;
+}
+
+.botoncontenido {
+  width: 130px;
+  font-size: larger;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--saffron);
+  color: var(--charcoal);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.botoncontenido:hover {
+  background-color: var(--siena);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comfortaa", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p,
+button {
+  font-family: "Red Hat Display", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: large;
+}
+
+header {
+  color: var(--charcoal);
+}
+
+#titulo {
+  background-color: var(--green2);
+  color: var(--charcoal);
+  width: 100vw;
+}
+
+#cierre {
+  color: var(--siena);
+}
+
+#cierre button {
+  width: max-content;
+  font-size: larger;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--green2);
+  color: var(--charcoal);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+#cierre button:hover {
+  background-color: var(--siena);
+}
+
+footer {
+  background-color: #264653;
+}
+
+#sociales i {
+  color: var(--brown);
+}
+
+#sociales i:hover {
+  color: var(--green2);
+}
+
+#entradacontenedor:hover,
+#desayunocontenedor:hover,
+#almuerzocontenedor:hover,
+#cenacontenedor:hover,
+#bebidacontenedor:hover {
+  background-color: var(--green2);
+  transition: all 0.3s ease 0s;
+}
+
+.modal-content {
+  background-color: var(--saffron) !important;
+}
+
+.modal-footer button {
+  width: max-content;
+  font-size: larger;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--green2);
+  color: var(--charcoal);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.modal-footer button:hover {
+  background-color: var(--siena);
+}
+
+.modal-header {
+  color: var(--siena);
+}
+
+.modal-body {
+  color: var(--charcoal);
+}
+
+.modal-body p {
+  color: var(--green2);
+}
+
+@media only screen and (max-width: 800px) {
+  #bodycontainer {
+    height: max-content;
+  }
+
+  #maincontainer {
+    height: max-content;
+  }
+
+  #contenido {
+    width: 90vw;
+    height: max-content;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+  }
+
+  #entradacontenedor,
+  #desayunocontenedor,
+  #almuerzocontenedor,
+  #cenacontenedor,
+  #bebidacontenedor {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
