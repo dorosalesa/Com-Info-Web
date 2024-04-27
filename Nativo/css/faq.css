@@ -1,0 +1,87 @@
+:root {
+  --principal: #185227;
+  --hover: #75eb93;
+  --acento: #b3ffc6;
+  --secundario: #0d852b;
+  --blanco: #e5ffec;
+  --titulo: "Jost", sans-serif;
+  --subtitulo: "Fresca", sans-serif;
+  --texto: "Quicksand", sans-serif;
+}
+
+#faq img {
+  height: 30vh;
+  margin: 1rem;
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+#faq {
+  padding: 0 15vw;
+}
+
+#faq h2 {
+  font-family: var(--titulo);
+  color: var(--principal);
+}
+
+#faq h3 {
+  font-family: var(--subtitulo);
+  color: var(--secundario);
+}
+
+#faq p {
+  font-family: var(--texto);
+  color: var(--principal);
+  font-size: larger;
+}
+
+@media only screen and (min-width: 1281px) {
+}
+
+@media only screen and (max-width: 1280px) {
+  .contenedorfaq {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #faq {
+    padding: 0 15vw;
+  }
+
+  #faq img {
+    width: 70vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedorfaq {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #faq {
+    padding: 0 15vw;
+  }
+
+  #faq img {
+    width: 70vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contenedorfaq {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #faq {
+    padding: 0 10vw;
+  }
+}

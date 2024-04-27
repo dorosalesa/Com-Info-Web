@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nativo Tamarindo</title>
+    <link rel="icon" href="logo.svg" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9877e29fb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fresca&family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" id="inicio">
+          <a class="navbar-brand" href="inicio.html" tabindex="0"
+            ><img
+              src="imagenes/logonativocolor.svg"
+              alt="logo"
+              style="height: 80px; margin: 10px"
+            />Nativo Tamarindo</a
+          >
+          <button
+            class="navbar-toggler m-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            tabindex="1"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav align-items-center">
+              <a
+                class="nav-item nav-link active"
+                tabindex="2"
+                href="inicio.html"
+                >Inicio</a
+              >
+              <a class="nav-item nav-link" tabindex="3" href="galeria.html"
+                >Galería</a
+              >
+              <a class="nav-item nav-link" tabindex="4" href="blog.html"
+                >Blog</a
+              >
+              <a class="nav-item nav-link" tabindex="5" href="faq.html">FAQ</a>
+              <a class="nav-item nav-link" tabindex="6" href="contacto.html"
+                >Contacto <span class="sr-only">(current)</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="infocontacto" class="d-flex flex-column align-items-center">
+        <div class="p-3"></div>
+        <h2>Contáctenos</h2>
+        <div class="d-flex flex-row justify-content-around flex-wrap">
+          <h4 class="p-2 text-center">
+            Teléfono:&nbsp;<br /><span style="font-weight: bold"
+              >+506 8420 9889</span
+            >
+          </h4>
+          <h4 class="p-2 text-center">
+            Correo electrónico:&nbsp;<br /><span style="font-weight: bold"
+              >nativotamarindo@yahoo.com</span
+            >
+          </h4>
+        </div>
+        <div
+          class="d-flex flex-row align-items-center flex-wrap justify-content-center contenedorcentral"
+        >
+          <div class="d-flex flex-column align-items-center p-3">
+            <h4>Estamos ubicados en Tamarindo:</h4>
+            <div
+              id="contenedormapa"
+              style="
+                max-width: 100%;
+                overflow: hidden;
+                color: red;
+                width: 30vw;
+                height: 40vh;
+              "
+            >
+              <div
+                id="my-map-display"
+                style="height: 100%; width: 100%; max-width: 100%"
+              >
+                <iframe
+                  style="height: 100%; width: 100%; border: 0"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=Tamarindo+Estuary+Tour+Nativo,+Oficina+Parque+Nacional+Marino+Las+Baulas,+Provincia+de+Guanacaste,+Tamarindo,+Costa+Rica&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                ></iframe>
+              </div>
+              <a
+                class="the-googlemap-enabler"
+                href="https://www.bootstrapskins.com/themes"
+                id="make-map-data"
+                >premium bootstrap themes</a
+              ><style>
+                .map-generator {
+                  max-width: 100%;
+                  max-height: 100%;
+                  background: none;
+                }
+              </style>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center contenedorformulario"
+          >
+            <div class="p-2"></div>
+            <h4 class="m-2 p-2 text-center">
+              ¿Desea contratar nuestros servicios, dejarnos saber su opinión, o
+              necesita realizar alguna consulta? <br />Complete este formulario
+              y con gusto le atenderemos.
+            </h4>
+            <form onsubmit="contactoSend(); reset(); return false;">
+              <div class="p-2">
+                <label for="nombreform">Nombre</label>
+                <input
+                  type="text"
+                  name="nombreform"
+                  id="nombreform"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+              <div class="p-2">
+                <label for="emailform">Correo electrónico</label>
+                <input
+                  type="email"
+                  name="emailform"
+                  id="emailform"
+                  placeholder="Correo electrónico"
+                  required
+                />
+              </div>
+              <div class="p-1">
+                <p class="m-0">Tema:</p>
+                <div class="d-flex flex-row justify-content-around">
+                  <div class="p-2">
+                    <input
+                      type="radio"
+                      id="reservaform"
+                      name="temaform"
+                      value="Reserva"
+                    />
+                    <label for="reservaform">Reserva</label>
+                  </div>
+                  <div class="p-2">
+                    <input
+                      type="radio"
+                      id="opinionform"
+                      name="temaform"
+                      value="Opinion"
+                    />
+                    <label for="opinionform">Opinión</label>
+                  </div>
+                  <div class="p-2">
+                    <input
+                      type="radio"
+                      id="consultaform"
+                      name="temaform"
+                      value="Consulta"
+                    />
+                    <label for="consultaform">Consulta</label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column p-2">
+                <label for="mensajeform">Mensaje:</label>
+                <textarea
+                  id="mensajeform"
+                  name="mensajeform"
+                  rows="4"
+                  cols="50"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="m-2" id="botonformulariocontacto">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="p-3"></div>
+      </section>
+    </main>
+    <footer>
+      <div id="fondofooter">
+        <div id="contenedorfooter">
+          <div id="contenedorlogofooter" class="d-flex">
+            <img
+              src="imagenes/logofooter.svg"
+              alt="logo nativo"
+              class="m-4 imagenlogofooter"
+            />
+          </div>
+          <div id="contenedorinfofooter" class="p-3">
+            <div class="row">
+              <h3>Nativo - Tamarindo, Costa Rica</h3>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col">
+                <h4>Contacto</h4>
+                <hr />
+                <div class="d-flex align-items-center m-1">
+                  <i class="fa-solid fa-phone m-1"></i>
+                  <h6 class="m-1">+506 8420 9889</h6>
+                </div>
+                <div class="d-flex align-items-center m-1">
+                  <i class="fa-solid fa-envelope m-1"></i>
+                  <h6 class="m-1">nativotamarindo@yahoo.com</h6>
+                </div>
+                <hr />
+                <div
+                  class="m-2 d-flex flex-row justify-content-around sociales"
+                >
+                  <a href="https://www.instagram.com/nativotamarindo/"
+                    ><i class="fa-brands fa-instagram fa-3x"></i
+                  ></a>
+                  <a
+                    href="https://www.youtube.com/@nativotamarindotamarindo4958"
+                    ><i class="fa-brands fa-youtube fa-3x"></i
+                  ></a>
+                  <a href="https://maps.app.goo.gl/DyjAQZMRNNS56Xva8"
+                    ><i class="fa-brands fa-google fa-3x"></i
+                  ></a>
+                  <a href="https://wa.link/p4ovdp"
+                    ><i class="fa-brands fa-whatsapp fa-3x"></i
+                  ></a>
+                </div>
+                <hr />
+              </div>
+              <div class="col">
+                <h4>Mapa de Sitio</h4>
+                <hr />
+                <div class="mapafooter">
+                  <h5><a href="inicio.html">Inicio</a></h5>
+                  <h5><a href="galeria.html">Galería</a></h5>
+                  <h5><a href="blog.html">Blog</a></h5>
+                  <h5><a href="faq.html">Preguntas Frecuentes</a></h5>
+                  <h5><a href="contacto.html">Contacto</a></h5>
+                </div>
+                <hr />
+              </div>
+              <div class="col">
+                <h4>Suscripción</h4>
+                <hr />
+                <div class="d-flex flex-column align-items-center m-1">
+                  <h6>
+                    Entérese de novedades, avistamientos, promociones y más.
+                  </h6>
+                  <form onsubmit="emailSend(); reset(); return false;">
+                    <input
+                      type="email"
+                      name="suscripcioncorreo"
+                      id="suscripcioncorreo"
+                      placeholder="Correo electrónico"
+                      required
+                    />
+
+                    <button type="submit" class="m-2" id="botonsuscribirfooter">
+                      Suscribir
+                    </button>
+                  </form>
+                </div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="scrolltop">
+        <a
+          data-scroll
+          id="irarriba"
+          class="goto-top"
+          href="#inicio"
+          title="Ir arriba"
+          onclick="topFunction()"
+          ><i class="fas fa-arrow-up fa-4x"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/contacto.js"></script>
+  </body>
+</html>

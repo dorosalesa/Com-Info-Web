@@ -1,0 +1,51 @@
+
+
+TEXTO
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+TITULO
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.jost-<uniquifier> {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+SUBTITULO
+.fresca-regular {
+  font-family: "Fresca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#185227 principal
+#75EB93 hover
+#B3FFC6 acento
+#0D852B secundario
+#E5FFEC blanco
+
+
+@media only screen and (min-width: 1281px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 375px) {
+}

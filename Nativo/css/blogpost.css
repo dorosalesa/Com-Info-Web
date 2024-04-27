@@ -1,0 +1,104 @@
+:root {
+  --principal: #185227;
+  --hover: #75eb93;
+  --acento: #b3ffc6;
+  --secundario: #0d852b;
+  --blanco: #e5ffec;
+  --titulo: "Jost", sans-serif;
+  --subtitulo: "Fresca", sans-serif;
+  --texto: "Quicksand", sans-serif;
+}
+
+#bannerblogpost1 {
+  background-image: url(/imagenes/blogpost1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+
+#bannerblogpost1 h2 {
+  font-family: var(--titulo);
+  color: var(--blanco);
+  backdrop-filter: brightness(50%);
+}
+
+#bannerblogpost2 {
+  background-image: url(/imagenes/blogpost2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+
+#bannerblogpost2 h2 {
+  font-family: var(--titulo);
+  color: var(--blanco);
+  backdrop-filter: brightness(50%);
+}
+
+#blogpostbody {
+  width: 80vw;
+}
+
+.blogimagen img {
+  width: 20vw;
+  padding: 1rem;
+}
+
+.blogtexto {
+  width: 30vw;
+}
+
+.blogtexto p {
+  font-family: var(--texto);
+  font-size: larger;
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 1281px) {
+}
+
+@media only screen and (max-width: 1280px) {
+  #blogpostbody {
+    width: 95vw;
+  }
+  .blogimagen img {
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  .blogtexto {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #blogpostbody {
+    width: 95vw;
+  }
+  .blogimagen img {
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  .blogtexto {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #blogpostbody {
+    width: 95vw;
+  }
+  .blogimagen img {
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  .blogtexto {
+    width: 80vw;
+  }
+}
